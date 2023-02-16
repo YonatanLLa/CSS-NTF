@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+}
+.container{
+    width: 350px;
+    margin: 0 auto;
+}
+.nav{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+.nav__i{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nav__i img{
+    display: block;
+    width: 100%; 
+}
+.nav__i div{
+    position: absolute;
+    background-color: hsla(178,100%,50%,0.5);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.nav__i div i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: #fff;
+}
+.nav__i:hover div{
+    display: block;
+    cursor: pointer;
+}
+
+/* ?segunda parte--- */
+.nav__logo > a{
+    display: inline-block;
+    padding: 20px 0;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav__logo a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+p{
+    color: hsl(215, 51%, 70%);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.logo-ethereum, .logo-hora{
+    display: flex;
+    align-items: center;
+    /* width: 30px; */
+}
+.logo-ethereum p{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 7px;
+}
+.logo-hora p{
+    padding-left: 7px;
+}
+hr{
+    border-color: hsl(215, 32%, 27%);
+}
+.nav__img{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0 12px 0; 
+}
+.nav__img img{
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    margin-right: 15px;
+}
+.nav__img p .name{
+    color: #FFF;
+    margin-left: 3px;
+    font-size: 16px;
+}
+.nav__img p .name:hover{
+    color: hsl(178, 100%, 50%);
+}
